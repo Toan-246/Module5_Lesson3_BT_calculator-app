@@ -1,0 +1,10 @@
+<input type="number" [(ngModel)]="firstOperand">
+<select [(ngModel)]="operator">
+  <option value="ADD">+</option>
+  <option value="SUBTRACT">-</option>
+  <option value="MULTIPLY">*</option>
+  <option value="DIVIDE">/</option>
+</select>
+<input type="number" [(ngModel)]="secondOperand">
+<button (click)="caculator()">Tính</button>
+<span> {{result}}</span>
